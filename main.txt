@@ -1,0 +1,18 @@
+#include "Graph.cpp"  // or your file name
+
+int main() {
+    Graph g;
+    g.init();
+
+    g.addEdge("Delhi", "Noida", 10);
+    g.addEdge("Delhi", "Gurgaon", 20);
+    g.addEdge("Noida", "Greater Noida", 15);
+    g.addEdge("Gurgaon", "Faridabad", 25);
+    g.addEdge("Greater Noida", "Faridabad", 30);
+
+    g.printGraph();
+
+    g.shortestPath("Delhi", "Faridabad");
+
+    return 0;
+}
